@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [FunctionalSuite]" parallel="methods">
+  <test thread-count="2" name="chromeTest(failed)" parallel="methods">
+    <classes>
+      <class name="com.qa.Script.Test_Script">
+        <methods>
+          <include name="verifying_the_Selected_House"/>
+          <include name="tearDown"/>
+          <include name="intial_setUp"/>
+          <include name="setup"/>
+          <include name="sorting_The_Price"/>
+        </methods>
+      </class> <!-- com.qa.Script.Test_Script -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+</suite> <!-- Failed suite [FunctionalSuite] -->

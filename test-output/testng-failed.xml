@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression_Suite]">
+  <test thread-count="5" name="Propert_Test(failed)">
+    <classes>
+      <class name="com.qa.Script.Script_Property">
+        <methods>
+          <include name="tearDown"/>
+          <include name="properties_List"/>
+          <include name="intial_setUp"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.Script.Script_Property -->
+    </classes>
+  </test> <!-- Propert_Test(failed) -->
+  <test thread-count="5" name="Verify_Test(failed)">
+    <classes>
+      <class name="com.qa.Script.Agent_verify_Script">
+        <methods>
+          <include name="tearDown"/>
+          <include name="intial_setUp"/>
+          <include name="setup"/>
+          <include name="verify_property"/>
+        </methods>
+      </class> <!-- com.qa.Script.Agent_verify_Script -->
+    </classes>
+  </test> <!-- Verify_Test(failed) -->
+</suite> <!-- Failed suite [Regression_Suite] -->
