@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Regression_Suite">
+<suite name="Regression_Suite" parallel="methods" thread-count="2">
 	<test name="Search_Test">
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.qa.Script.Search_Script" />
 		</classes>
 	</test> <!-- Test -->
+
+
 	<test name="Propert_Test">
 		<classes>
 			<class name="com.qa.Script.Script_Property" />
 		</classes>
 	</test> <!-- Test -->
+
+
 	<test name="Verify_Test">
+		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="com.qa.Script.Agent_verify_Script" />
 		</classes>

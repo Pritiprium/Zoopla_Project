@@ -21,26 +21,28 @@ public class Browser_Utility {
 
 	@Parameters("browser")
 	
-	public void launchbrwsr() {
+	public void launchbrwsr(String sbrowser) {
 		
-		//if(sbrowser.contentEquals("chrome")) {
+		if(sbrowser.contentEquals("chrome")) {
 		WebDriverManager.chromedriver().setup();
 			TestBase.driver = new ChromeDriver();
 			TestBase.driver.get("https://www.zoopla.co.uk/");
 			TestBase.driver.manage().window().maximize();
+			System.out.print("Dimension of window is-->");
+			System.out.println(TestBase.driver.manage().window().getSize());
 		//TestBase.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-//	}else if (sbrowser.contentEquals("firefox")) {
-//		WebDriverManager.firefoxdriver().setup();
-//		TestBase.driver = new FirefoxDriver();
-//		TestBase.driver.get("\"https://www.zoopla.co.uk/");
-//		TestBase.driver.manage().window().maximize();
-//	}else {
-//		WebDriverManager.iedriver().setup();
-//		TestBase.driver = new InternetExplorerDriver();
-//		TestBase.driver.get("\"https://www.zoopla.co.uk/");
-//		TestBase.driver.manage().window().maximize();
-//	}
-//		return TestBase.driver;
+	}else if (sbrowser.contentEquals("firefox")) {
+		WebDriverManager.firefoxdriver().setup();
+		TestBase.driver = new FirefoxDriver();
+		TestBase.driver.get("\"https://www.zoopla.co.uk/");
+		TestBase.driver.manage().window().maximize();
+	}else {
+		WebDriverManager.iedriver().setup();
+		TestBase.driver = new InternetExplorerDriver();
+		TestBase.driver.get("\"https://www.zoopla.co.uk/");
+		TestBase.driver.manage().window().maximize();
+	}
+		//return TestBase.driver;
 	}
 	public static void waitforVisiblity(WebElement elefowait) {
 		WebDriverWait wait = new WebDriverWait(TestBase.driver, 30);

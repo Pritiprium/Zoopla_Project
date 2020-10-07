@@ -27,9 +27,10 @@ public class Search_Page extends TestBase {
 	@FindBy(xpath = "//input[@id='search-input-location']")
 	WebElement searchBox;
 
-	public void accept_Cookies() {
+	public boolean accept_Cookies() {
 		Browser_Utility.waitforVisiblity(cookies);
 		cookies.click();
+		return true;
 	}
 
 	public void get_Title_N_searchCity() {

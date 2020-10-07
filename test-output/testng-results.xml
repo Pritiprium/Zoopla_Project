@@ -2,56 +2,56 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression_Suite" duration-ms="30434" started-at="2020-09-06T00:54:33Z" finished-at="2020-09-06T00:55:03Z">
+  <suite name="Regression_Suite" duration-ms="31269" started-at="2020-10-07T20:35:49Z" finished-at="2020-10-07T20:36:21Z">
     <groups>
     </groups>
-    <test name="Search_Test" duration-ms="2813" started-at="2020-09-06T00:54:33Z" finished-at="2020-09-06T00:54:36Z">
+    <test name="Search_Test" duration-ms="4970" started-at="2020-10-07T20:35:49Z" finished-at="2020-10-07T20:35:54Z">
       <class name="com.qa.Script.Search_Script">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.Script.Search_Script@2145b572]" name="setup" is-config="true" duration-ms="118" started-at="2020-09-06T00:54:33Z" finished-at="2020-09-06T00:54:33Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.Script.Search_Script@72f926e6]" name="setup" is-config="true" duration-ms="103" started-at="2020-10-07T20:35:49Z" finished-at="2020-10-07T20:35:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="accept_Cookies()[pri:1, instance:com.qa.Script.Search_Script@2145b572]" name="accept_Cookies" duration-ms="271" started-at="2020-09-06T00:54:33Z" finished-at="2020-09-06T00:54:33Z">
+        <test-method status="PASS" signature="accept_Cookies()[pri:1, instance:com.qa.Script.Search_Script@72f926e6]" name="accept_Cookies" duration-ms="234" started-at="2020-10-07T20:35:49Z" finished-at="2020-10-07T20:35:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accept_Cookies -->
-        <test-method status="PASS" signature="search_City()[pri:2, instance:com.qa.Script.Search_Script@2145b572]" name="search_City" duration-ms="2379" started-at="2020-09-06T00:54:33Z" finished-at="2020-09-06T00:54:36Z">
+        <test-method status="PASS" signature="search_City()[pri:2, instance:com.qa.Script.Search_Script@72f926e6]" name="search_City" duration-ms="4580" started-at="2020-10-07T20:35:50Z" finished-at="2020-10-07T20:35:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_City -->
       </class> <!-- com.qa.Script.Search_Script -->
     </test> <!-- Search_Test -->
-    <test name="Propert_Test" duration-ms="20597" started-at="2020-09-06T00:54:37Z" finished-at="2020-09-06T00:54:57Z">
+    <test name="Propert_Test" duration-ms="18460" started-at="2020-10-07T20:35:55Z" finished-at="2020-10-07T20:36:13Z">
       <class name="com.qa.Script.Script_Property">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.Script.Script_Property@6973b51b]" name="setup" is-config="true" duration-ms="10" started-at="2020-09-06T00:54:37Z" finished-at="2020-09-06T00:54:37Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.Script.Script_Property@43195e57]" name="setup" is-config="true" duration-ms="63" started-at="2020-10-07T20:35:55Z" finished-at="2020-10-07T20:35:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="select_dropdown()[pri:1, instance:com.qa.Script.Script_Property@6973b51b]" name="select_dropdown" duration-ms="7052" started-at="2020-09-06T00:54:37Z" finished-at="2020-09-06T00:54:44Z">
+        <test-method status="PASS" signature="select_dropdown()[pri:1, instance:com.qa.Script.Script_Property@43195e57]" name="select_dropdown" duration-ms="6326" started-at="2020-10-07T20:35:55Z" finished-at="2020-10-07T20:36:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_dropdown -->
-        <test-method status="PASS" signature="properties_List()[pri:2, instance:com.qa.Script.Script_Property@6973b51b]" name="properties_List" duration-ms="13519" started-at="2020-09-06T00:54:44Z" finished-at="2020-09-06T00:54:57Z">
+        <test-method status="PASS" signature="properties_List()[pri:2, instance:com.qa.Script.Script_Property@43195e57]" name="properties_List" duration-ms="12001" started-at="2020-10-07T20:36:01Z" finished-at="2020-10-07T20:36:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- properties_List -->
       </class> <!-- com.qa.Script.Script_Property -->
     </test> <!-- Propert_Test -->
-    <test name="Verify_Test" duration-ms="6233" started-at="2020-09-06T00:54:57Z" finished-at="2020-09-06T00:55:03Z">
+    <test name="Verify_Test" duration-ms="7103" started-at="2020-10-07T20:36:13Z" finished-at="2020-10-07T20:36:21Z">
       <class name="com.qa.Script.Agent_verify_Script">
-        <test-method status="PASS" signature="intial_setUp()[pri:0, instance:com.qa.Script.Agent_verify_Script@402bba4f]" name="intial_setUp" is-config="true" duration-ms="8376" started-at="2020-09-06T00:54:25Z" finished-at="2020-09-06T00:54:33Z">
+        <test-method status="PASS" signature="intial_setUp()[pri:0, instance:com.qa.Script.Agent_verify_Script@59fd97a8]" name="intial_setUp" is-config="true" duration-ms="10101" started-at="2020-10-07T20:35:39Z" finished-at="2020-10-07T20:35:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intial_setUp -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.Script.Agent_verify_Script@402bba4f]" name="setup" is-config="true" duration-ms="2" started-at="2020-09-06T00:54:57Z" finished-at="2020-09-06T00:54:57Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.Script.Agent_verify_Script@59fd97a8]" name="setup" is-config="true" duration-ms="112" started-at="2020-10-07T20:36:13Z" finished-at="2020-10-07T20:36:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verify_property()[pri:0, instance:com.qa.Script.Agent_verify_Script@402bba4f]" name="verify_property" duration-ms="6224" started-at="2020-09-06T00:54:57Z" finished-at="2020-09-06T00:55:03Z">
+        <test-method status="PASS" signature="verify_property()[pri:0, instance:com.qa.Script.Agent_verify_Script@59fd97a8]" name="verify_property" duration-ms="6981" started-at="2020-10-07T20:36:14Z" finished-at="2020-10-07T20:36:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_property -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.Script.Agent_verify_Script@402bba4f]" name="tearDown" is-config="true" duration-ms="872" started-at="2020-09-06T00:55:04Z" finished-at="2020-09-06T00:55:04Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.Script.Agent_verify_Script@59fd97a8]" name="tearDown" is-config="true" duration-ms="827" started-at="2020-10-07T20:36:21Z" finished-at="2020-10-07T20:36:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

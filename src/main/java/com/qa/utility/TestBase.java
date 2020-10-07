@@ -20,7 +20,7 @@ public class TestBase {
 	@BeforeSuite
 	public  void intial_setUp() {
 		
-		obbrwsr.launchbrwsr();
+		obbrwsr.launchbrwsr("chrome");
 	}
 	
 	@AfterSuite

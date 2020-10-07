@@ -155,28 +155,6 @@
           <div class="suite-Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.qa.Script.Script_Property</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="properties_List">
-                  </a> <!-- properties_List -->
-                  <span class="method-name">properties_List</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="select_dropdown">
-                  </a> <!-- select_dropdown -->
-                  <span class="method-name">select_dropdown</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression_Suite-class-passed -->
-          <div class="suite-Regression_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.qa.Script.Search_Script</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -196,6 +174,28 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Regression_Suite-class-passed -->
+          <div class="suite-Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.Script.Script_Property</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="properties_List">
+                  </a> <!-- properties_List -->
+                  <span class="method-name">properties_List</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="select_dropdown">
+                  </a> <!-- select_dropdown -->
+                  <span class="method-name">select_dropdown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-passed -->
         </div> <!-- panel Regression_Suite -->
         <div panel-name="test-xml-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -205,18 +205,20 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Regression_Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Search_Test&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Regression_Suite&quot; parallel=&quot;methods&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;Search_Test&quot; parallel=&quot;methods&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.Script.Search_Script&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Search_Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Propert_Test&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;Propert_Test&quot; parallel=&quot;methods&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.Script.Script_Property&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Propert_Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Verify_Test&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;Verify_Test&quot; parallel=&quot;methods&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.Script.Agent_verify_Script&quot;/&gt;
     &lt;/classes&gt;
@@ -268,28 +270,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'properties_List')
 data.setCell(0, 2, 'com.qa.Script.Script_Property')
-data.setCell(0, 3, 13519);
+data.setCell(0, 3, 12001);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'select_dropdown')
-data.setCell(1, 2, 'com.qa.Script.Script_Property')
-data.setCell(1, 3, 7052);
+data.setCell(1, 1, 'verify_property')
+data.setCell(1, 2, 'com.qa.Script.Agent_verify_Script')
+data.setCell(1, 3, 6981);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verify_property')
-data.setCell(2, 2, 'com.qa.Script.Agent_verify_Script')
-data.setCell(2, 3, 6224);
+data.setCell(2, 1, 'select_dropdown')
+data.setCell(2, 2, 'com.qa.Script.Script_Property')
+data.setCell(2, 3, 6326);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'search_City')
 data.setCell(3, 2, 'com.qa.Script.Search_Script')
-data.setCell(3, 3, 2379);
+data.setCell(3, 3, 4580);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'accept_Cookies')
 data.setCell(4, 2, 'com.qa.Script.Search_Script')
-data.setCell(4, 3, 271);
+data.setCell(4, 3, 234);
 window.suiteTableData['Regression_Suite']= { tableData: data, tableDiv: 'times-div-Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Regression_Suite">
               </div> <!-- times-div-Regression_Suite -->
             </div> <!-- times-div -->
@@ -325,45 +327,45 @@ return data;
               <div class="chronological-class-name">com.qa.Script.Search_Script</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">8384 ms</span>
+                <span class="method-start">10103 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">accept_Cookies</span>
-                <span class="method-start">8531 ms</span>
+                <span class="method-start">10232 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">search_City</span>
-                <span class="method-start">8808 ms</span>
+                <span class="method-start">10488 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.Script.Script_Property</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">11901 ms</span>
+                <span class="method-start">15743 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">select_dropdown</span>
-                <span class="method-start">11912 ms</span>
+                <span class="method-start">15857 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">properties_List</span>
-                <span class="method-start">18974 ms</span>
+                <span class="method-start">22198 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.Script.Agent_verify_Script</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">32582 ms</span>
+                <span class="method-start">34270 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verify_property</span>
-                <span class="method-start">32585 ms</span>
+                <span class="method-start">34384 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">38876 ms</span>
+                <span class="method-start">41449 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
